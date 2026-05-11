@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MIG Expert Study Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div>
+        <div class="brand">MIG Expert</div>
+        <div class="brand-sub">Study Dashboard</div>
+      </div>
+      <nav class="nav" id="mainNav">
+        <button class="nav-btn active" data-view="hoje">Hoje</button>
+        <button class="nav-btn" data-view="jornada">Jornada</button>
+        <button class="nav-btn" data-view="pitch">Pitch MIGNOW</button>
+        <button class="nav-btn" data-view="revisao">Revisão</button>
+        <button class="nav-btn" data-view="apresentacoes">Apresentações</button>
+        <button class="nav-btn" data-view="vocabulario">Vocabulário</button>
+        <button class="nav-btn" data-view="clientes">Perfis de cliente</button>
+        <button class="nav-btn" data-view="historico">Histórico</button>
+        <button class="nav-btn" data-view="backup">Backup</button>
+      </nav>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div>
+          <h1 id="pageTitle">Hoje</h1>
+          <p class="muted">Base pronta para subir no GitHub Pages e evoluir a arquitetura.</p>
+        </div>
+        <div class="topbar-actions">
+          <button id="createProfileBtn" class="btn btn-secondary">Novo perfil</button>
+          <select id="profileSelect" class="select"></select>
+          <button id="exportBtn" class="btn btn-secondary">Exportar JSON</button>
+          <label class="btn btn-secondary file-label">
+            Importar JSON
+            <input id="importInput" type="file" accept="application/json" hidden>
+          </label>
+        </div>
+      </header>
+
+      <section id="app"></section>
+    </main>
+  </div>
+
+  <script src="./assets/js/data-weeks.js"></script>
+  <script src="./assets/js/data-pitch.js"></script>
+  <script src="./assets/js/storage.js"></script>
+  <script src="./assets/js/render-home.js"></script>
+  <script src="./assets/js/render-roadmap.js"></script>
+  <script src="./assets/js/render-pitch.js"></script>
+  <script src="./assets/js/render-review.js"></script>
+  <script src="./assets/js/render-presentations.js"></script>
+  <script src="./assets/js/render-glossary.js"></script>
+  <script src="./assets/js/render-clients.js"></script>
+  <script src="./assets/js/render-history.js"></script>
+  <script src="./assets/js/app.js"></script>
+</body>
+</html>
